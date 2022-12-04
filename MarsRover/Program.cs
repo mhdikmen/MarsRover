@@ -33,7 +33,7 @@ namespace MarsRover
             Console.WriteLine(firstRover);
 
             Rover secondRover = new Rover(new Coordinates(int.Parse(secondRoverInfo[0]), int.Parse(secondRoverInfo[1])), secondRoverInfo[2], plane);
-            firstRover.RunCommand(secondCommand);
+            secondRover.RunCommand(secondCommand);
             Console.WriteLine(secondRover);
 
             Console.ReadKey();
